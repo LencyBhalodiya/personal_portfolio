@@ -1,0 +1,86 @@
+.main-1{
+    height: 100vh;
+    z-index: 2;
+    margin-top: 75px;
+   position: relative;
+}
+.main-lightcolor{
+    transition: all 0.3s ease-in;
+    background-color: #FFD281;
+}
+.main-darkcolor{
+    transition: all 0.3s ease-in;
+    background-color: #131417;
+    color: #fff;
+}
+#officeMan{
+    height: 500px;
+    width: 100%;
+}
+.left{
+    overflow-wrap: break-word;
+  text-align: center;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",system-ui,sans-serif;;
+  font-size: 3em;
+  padding-top:54px;
+}
+.right{
+    position: absolute;
+    bottom: -3px;
+    left: 25%;
+}
+
+/* Combining media query expressions */
+@media only screen and (max-width: 974px) and (min-width: 400px)  {
+  
+    #officeMan{
+        height: 27rem;
+    }
+    .right{
+        position: absolute;
+        bottom: -1px;
+        left: 11%;
+    }
+}
+@media only screen and (max-width: 740px) and (min-width: 501px)  {
+  
+    .right{
+        position: absolute;
+        bottom: -3px;
+        left: 4%;
+    }
+}
+@media only screen and (max-width: 530px) and (min-width: 373px)  {
+  
+    .right{
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+    }
+    #officeMan{
+        height: 19rem;
+    }
+    .main-1{
+        height: 93vh;
+    }
+    .left{
+        font-size: 2.1em;
+    }
+}
+@media only screen and (max-width: 392px) and (min-width: 0px)  {
+  
+    .right{
+        position: absolute;
+        bottom: -3px;
+        left: -9px;
+    }
+    #officeMan{
+        height: 20rem;
+    }
+    .main-1{
+        height: 93vh;
+    }
+    .left{
+        font-size: 1.9em;
+    }
+}
