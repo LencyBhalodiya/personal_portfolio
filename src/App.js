@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <Navbar lightMode = {lightMode} DarkMode = {DarkMode} />
-      <LandingPage lightMode = {lightMode} DarkMode = {DarkMode}  />
-      <AboutMe />
-      <Project/>
+      <LandingPage lightMode = {lightMode}  />
+      <AboutMe    />
+      <Project lightMode={lightMode}/>
     </>
       
     
