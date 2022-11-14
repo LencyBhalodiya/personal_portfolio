@@ -11,7 +11,7 @@ export default function Project({lightMode}) {
       <div className="scroll">
         <div className="cards-wrap">
           <div className={`card ${lightMode  ? "" : "card-dark"}`}>
-            <div className="card-topic">Cocktail Receipt</div>
+            <div className= "card-topic" >Cocktail Receipt</div>
             <div className="card-des">
               <p>Technology used: React.js, Material UI</p>
               <br />

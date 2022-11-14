@@ -10,7 +10,7 @@ function App() {
     <>
       <Navbar lightMode = {lightMode} DarkMode = {DarkMode} />
       <LandingPage lightMode = {lightMode}  />
-      <AboutMe    />
+      <AboutMe   lightMode={lightMode} />
       <Project lightMode={lightMode}/>
     </>
       

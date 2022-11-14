@@ -1,4 +1,188 @@
-.main-2{
-    height: 100vh;
-    background-color: pink;
+section{
+  height: 100vh;
+  background-color: #2a9df4;  
+  display: flex;
+}
+.section-dark{
+  background-color: #1F1F1F !important;
+}
+.about-card-dark{
+  box-shadow:  20px 20px 60px #181818,
+             -20px -20px 60px #262626 !important;
+}
+.about-shape-dark{
+    background-color: #1c8ee6 !important;
+}
+.about-right-dark{
+  background-color: #1F1F1F !important;
+}
+.about-desc-dark{
+  background-color: #1F1F1F !important;
+}
+.h1-dark{
+  color: #fff;
+}
+.p-dark{
+  color: rgb(202, 191, 191) !important;
+}
+.about-card{
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto auto;
+  box-shadow:  20px 20px 60px #217cc1,
+             -20px -20px 60px #33beff;
+  display: flex;
+  flex-direction: row;
+  
+}
+.about-desc{
+  background-color: #fff;
+  height: 100%;
+  width: 55%;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-desc h1{
+  font-family: "Ubuntu",sans-serif;
+}
+.about-desc p{
+  line-height: 2rem;
+  font-size: 1.28rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0.5rem;
+  font-family: "Karla",sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(138, 137, 137);
+}
+.about-right{
+  position: relative;
+  background-color:#fff;
+  width: 45%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+#me{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 89%;
+
+}
+.photo-div{
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+.about-shape{
+  -webkit-clip-path: circle(57.1% at 74% 90%);
+  clip-path: circle(68.1% at 74% 90%);
+  background-color: #2a9df4;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 0;
+}
+
+
+
+/* Min-width */
+@media only screen and (max-width: 900px)  {
+  .about-card{
+    display: flex;
+    flex-direction: column-reverse;  
+    width: 95%;
+    height: 90%;
+  }
+  .about-desc{
+    width: 100%;
+    height: 60%;
+  }
+  .about-right{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+  }
+  .about-shape{
+    clip-path: circle(40% at 50% 3%);
+    transform: rotate(180deg);
+    background-color: #2a9df4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 0;
+  }
+  #me{
+    position: absolute;
+    bottom: -2rem;
+    left: 32%;
+    height: 100%;
+  }
+  .photo-div{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+  }
+  .about-desc h1{
+    font-family: "Ubuntu",sans-serif;
+  }
+  .about-desc p{
+    line-height: 1.8rem;
+    font-size: 1.12rem;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0.7rem;
+    font-weight: 400;
+  }
+}
+@media only screen and (max-width: 500px)  {
+  .about-shape{
+    clip-path: circle(60% at 50% 3%);
+    transform: rotate(180deg);
+    background-color: #2a9df4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 0;
+  }
+  .about-desc p{
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    padding: 0em 0rem;
+    margin: 0.3rem 0.3rem;
+    font-weight: 400;
+  }
+  .about-card{ 
+    width: 97%;
+    height: 94%;
+  }
+  .about-desc{
+    width: 100%;
+    height: 74%;
+  }
+  .about-right{
+    width: 100%;
+    height: 26%;
+    text-align: center;
+  }
+  .about-desc h1{
+    font-size: 1.2em;
+  }
+  #me{
+    bottom: -2rem;
+    left: 33%;
+    height: 110%;
+  }
 }
