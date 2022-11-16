@@ -63,7 +63,14 @@ h1 {
   text-align: center;
   justify-content: center;
   font-size: 1.8em;
+  font-weight: 580;
   padding-top: 10px;
+}
+.btn a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 520;
 }
 .card-des {
   opacity: 0.8;
@@ -84,7 +91,7 @@ h1 {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   color: #fff;
   font-size: 16px;
-  padding: 12px 32px;
+  padding: 10px 25px;
   position: absolute;
   bottom: 30px;
   left: 25px;
@@ -92,7 +99,7 @@ h1 {
   letter-spacing: 1px;
 }
 .btn:hover{
-  padding: 13px 33px;
+  padding: 12px 27px;
   transition: all 0.3s ease;
   font-size: 17px;
 }

@@ -2,9 +2,12 @@ section{
   height: 100vh;
   background-color: #2a9df4;  
   display: flex;
+  transition: all 0.3s ease;
+
 }
 .section-dark{
   background-color: #1F1F1F !important;
+  transition: all 0.3s ease;
 }
 .about-card-dark{
   box-shadow:  20px 20px 60px #181818,
@@ -12,12 +15,18 @@ section{
 }
 .about-shape-dark{
     background-color: #1c8ee6 !important;
+  transition: all 0.3s ease;
+
 }
 .about-right-dark{
   background-color: #1F1F1F !important;
+  transition: all 0.3s ease;
+
 }
 .about-desc-dark{
   background-color: #1F1F1F !important;
+  transition: all 0.3s ease;
+
 }
 .h1-dark{
   color: #fff;
@@ -35,13 +44,15 @@ section{
              -20px -20px 60px #33beff;
   display: flex;
   flex-direction: row;
+  transition: all 0.3s ease;
   
 }
 .about-desc{
   background-color: #fff;
+  transition: all 0.3s ease;
   height: 100%;
   width: 55%;
-  border-radius: 10px;
+  border-radius: 10px 0px 0px 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -65,9 +76,11 @@ section{
   background-color:#fff;
   width: 45%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0px 10px 10px 0px;
   text-align: center;
   overflow: hidden;
+  transition: all 0.3s ease;
+
 }
 #me{
   position: absolute;
@@ -106,11 +119,14 @@ section{
   .about-desc{
     width: 100%;
     height: 60%;
+  border-radius: 0px 0px 10px 10px ;
   }
   .about-right{
     width: 100%;
     height: 40%;
     text-align: center;
+  border-radius: 10px 10px 0px 0px ;
+
   }
   .about-shape{
     clip-path: circle(40% at 50% 3%);
@@ -158,8 +174,8 @@ section{
     z-index: 0;
   }
   .about-desc p{
-    line-height: 1.8rem;
-    font-size: 1.1rem;
+    line-height: 1.7rem;
+    font-size: 1.05rem;
     padding: 0em 0rem;
     margin: 0.3rem 0.3rem;
     font-weight: 400;

@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "./Navbar/Navbar.jsx";
 import LandingPage from "./Landing/LandingPage.jsx";
 import AboutMe from "./AboutMe/AboutMe.jsx";
-import Project from "./Project/Project.jsx"
+import Project from "./Project/Project.jsx";
+import Contact from "./Contact/Contact.jsx";
 import "./App.css"
 function App() {
   const [lightMode, DarkMode] = React.useState(true);
@@ -12,6 +13,7 @@ function App() {
       <LandingPage lightMode = {lightMode}  />
       <AboutMe   lightMode={lightMode} />
       <Project lightMode={lightMode}/>
+      <Contact lightMode = {lightMode}/>
     </>
       
     
