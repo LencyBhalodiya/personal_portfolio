@@ -5,19 +5,23 @@ import AboutMe from "./AboutMe/AboutMe.jsx";
 import Project from "./Project/Project.jsx";
 import Contact from "./Contact/Contact.jsx";
 import "./App.css"
+import {useState, createContext} from "react"; 
+const data = createContext();
 function App() {
-  const [lightMode, DarkMode] = React.useState(true);
+  const [lightMode, DarkMode] = useState(true);
   return (
     <>
+    <data.Provider value = {lightMode}>
       <Navbar lightMode = {lightMode} DarkMode = {DarkMode} />
-      <LandingPage lightMode = {lightMode}  />
-      <AboutMe   lightMode={lightMode} />
-      <Project lightMode={lightMode}/>
-      <Contact lightMode = {lightMode}/>
+      <LandingPage/>
+      <AboutMe />
+      <Project/>
+      <Contact/>
+      </data.Provider>
     </>
       
     
   );
 }
-
 export default App;
+export {data};

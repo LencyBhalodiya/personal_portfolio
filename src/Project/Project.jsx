@@ -1,7 +1,9 @@
-import React from "react";
+import React,{useContext}from "react";
+import {data} from '../App.js'
 import "./ProjectStyle.css";
-export default function Project({ lightMode }) {
-  console.log(lightMode);
+export default function Project() {
+  const lightMode = useContext(data);
+
   return (
     <div
       className={`project-section ${lightMode ? "" : "project-section-dark"}`}

@@ -1,11 +1,13 @@
-import React from "react";
+import React ,{useContext}from "react";
 import "./ContactStyle.css";
 import linkedln from "./linkedln.png";
 import twitter from "./twitter.png";
 import github from "./github.png";
 import pdf from "./resume_lency.pdf"
+import {data} from '../App.js'
 
-function Contact({lightMode}) {
+function Contact() {
+const lightMode = useContext(data);
   return (
     <footer id="contacts" className={lightMode? "": "footer-dark"}>
       <h1>Get In Touch</h1>

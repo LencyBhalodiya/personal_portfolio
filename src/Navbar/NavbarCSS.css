@@ -1,5 +1,7 @@
-* {
+*{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
   
   body {
@@ -15,9 +17,13 @@
     top:0;
     z-index: 3;
     background-color: #fff;
-    margin-bottom: 41rem;
+    color: #111;
+    margin-bottom: 0rem;
   }
-
+ .nav-dark{
+  background-color: #1F1F1F;
+  color: #fff;
+ }
   .nav > .nav-header {
     display: inline;
     z-index: 2;
@@ -30,7 +36,6 @@
     font-weight: 700;
     padding: 19px 10px 10px 15px;
     z-index: 2;
-
   }
   
   .nav > .nav-btn {
@@ -41,7 +46,7 @@
     display: inline;
     float: right;
     font-size: 21px;
-    margin-right:5.5em;
+    margin-right:5.6em;
   }
 
   .nav > .nav-links > a {
@@ -54,6 +59,9 @@
     font-weight: 550;
     z-index: 2;
 
+  }
+  .nav > .nav-links-dark > a{
+    color: #fff;
   }
   .nav > .nav-links > a:hover {
     border-bottom: 3px solid #111;
@@ -149,16 +157,22 @@ body.dark {
   position: relative;
   transform: scale(1.5);
 }
+.label-dark{
+  background-color: #ffffff;
+}
 
 .ball {
   width: 17px;
   height: 17px;
-  background-color: white;
+  background-color: #fff;
   position: absolute;
   top: 2px;
   left: 2px;
   border-radius: 50%;
   transition: transform 0.2s linear;
+}
+.ball-dark{
+  background-color: #111;
 }
 
 /*  target the elemenent after the label*/
